@@ -75,6 +75,25 @@ Outputs:
 - Visão executiva: quanto do dataset está em risco.
 - Todos os gráficos são exportados em PNG (300 DPI), prontos para relatórios.
 
+⚙️ Executa:
+Rscript R/risk_pipeline_isolation_forest.R
+
+🧩 Casos de Uso:
+
+- Detecção de risco operacional
+- Análise de outliers financeiros
+- Priorização de auditoria
+- Monitoramento de vendas anômalas
+- Suporte a regras de negócio
+
+⚠️ Observações Importantes
+
+- O modelo não substitui regra de negócio
+- O score indica anomalia estatística, não fraude confirmada
+- A validação final deve ser feita por analista ou especialista do domínio
+
+👤 Autor
+Projeto desenvolvido com foco em Data Analytics, BI e Modelagem Estatística aplicada, priorizando clareza, reprodutibilidade e aplicabilidade real.
 
 🏗️ Estrutura do Projeto
 
