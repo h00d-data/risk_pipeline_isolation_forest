@@ -1,4 +1,4 @@
-🔍 Risk Anomaly Detection with Isolation Forest (R)
+**🔍 Risk Anomaly Detection with Isolation Forest (R)**
 
 Pipeline completo de detecção de risco/anomalias usando Isolation Forest, com foco em análise exploratória, priorização de risco e visualização executiva.
 Projeto não supervisionado, ideal para cenários onde não existe variável alvo real (fraude, inconsistência, outliers operacionais, risco comercial etc.).
