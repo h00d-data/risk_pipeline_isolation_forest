@@ -1,0 +1,3 @@
+distribuicao_risk_score.png
+boxplot_risco_por_classe.png
+volume_por_classe_risco.png
