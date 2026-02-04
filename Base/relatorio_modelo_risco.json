@@ -1,0 +1,27 @@
+{
+    "modelo": "IsolationForest",
+    "tipo_modelo": "Nao supervisionado",
+    "total_registros": 503,
+    "tempo_execucao_segundos": 0.83,
+    "distribuicao_risco": {
+        "alto": 69,
+        "medio": 305,
+        "baixo": 129
+    },
+    "estatisticas_score": {
+        "count": 503.0,
+        "mean": 0.4403798610033148,
+        "std": 0.19547054845943299,
+        "min": 0.0,
+        "25%": 0.32558320659151996,
+        "50%": 0.41562901472349434,
+        "75%": 0.5553035662131183,
+        "max": 1.0
+    },
+    "observacoes": [
+        "Modelo não supervisionado, sem variável alvo real",
+        "Métricas como AUC, Accuracy e Recall foram ignoradas propositalmente",
+        "O score indica grau de anomalia estatística",
+        "Validação final deve ser feita por regra de negócio ou analista"
+    ]
+}
