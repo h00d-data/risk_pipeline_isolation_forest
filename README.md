@@ -34,3 +34,70 @@ Identificar registros com comportamento estatisticamente anômalo, atribuir um s
 ⚠️ Métricas supervisionadas como Accuracy, Recall,AUC não se aplicam e foram intencionalmente ignoradas.
 
 
+⚙️ Fluxo do Pipeline
+
+Carga de dados
+CSV ou banco MySQL (configurável)
+
+* Preprocessamento:
+-Imputação de valores ausentes
+-Normalização de variáveis numéricas
+-One-hot encoding para categóricas
+-Agrupamento de categorias raras
+
+*Treinamento:
+
+- Isolation Forest com 300 árvores
+- Score de risco
+- Normalização para escala 0–1
+- Quanto maior, maior o risco
+
+*Classificação:
+
+Baixo / Médio / Alto risco
+
+Outputs:
+
+- CSV para BI
+- Ranking dos maiores riscos
+- Relatório técnico
+- Gráficos analíticos
+
+📊 Gráficos Gerados:
+
+1️⃣ Distribuição do Risk Score
+- Mostra concentração, dispersão e cauda de risco.
+
+2️⃣ Boxplot por Classe de Risco
+- Valida se a separação Baixo / Médio / Alto faz sentido estatístico.
+
+3️⃣ Volume por Classe
+- Visão executiva: quanto do dataset está em risco.
+- Todos os gráficos são exportados em PNG (300 DPI), prontos para relatórios.
+
+
+🏗️ Estrutura do Projeto
+
+```
+risk-anomaly-isolationforest/
+│
+├── data/
+│   └── sales-2003.csv
+│
+├── R/
+│   └── risk_pipeline_isolation_forest.R
+│
+├── outputs_graficos/
+│   ├── distribuicao_risk_score.png
+│   ├── boxplot_risco_por_classe.png
+│   └── volume_por_classe_risco.png
+│
+├── dados_preditos_powerbi.csv
+├── ranking_top_risco.csv
+├── relatorio_modelo_risco.json
+│
+├── README.md
+└── .gitignore
+
+
+```
