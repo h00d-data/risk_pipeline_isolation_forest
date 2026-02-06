@@ -3,6 +3,14 @@
 Pipeline completo de detecção de risco/anomalias usando Isolation Forest, com foco em análise exploratória, priorização de risco e visualização executiva.
 Projeto não supervisionado, ideal para cenários onde não existe variável alvo real (fraude, inconsistência, outliers operacionais, risco comercial etc.).
 
+A detecção de anomalias aplicado a cenários de risco e decisão de negócio, utilizando Isolation Forest para identificar comportamentos fora do padrão e 
+apoiar priorização e tomada de decisão.
+
+- Problema de negócio
+- Abordagem
+- Resultado esperado
+- Onde isso se aplica numa empresa real
+
 🎯 Objetivo do Projeto
 
 Identificar registros com comportamento estatisticamente anômalo, atribuir um score de risco normalizado (0–1) e classificá-los em:
